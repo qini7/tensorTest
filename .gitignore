@@ -13,6 +13,7 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+*.tar.gz
 
 # Windows shortcuts
 *.lnk
@@ -45,3 +46,11 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+cifar10/cifar-10-batches-py/data_batch_1
+cifar10/cifar-10-batches-py/data_batch_2
+cifar10/cifar-10-batches-py/data_batch_3
+cifar10/cifar-10-batches-py/data_batch_4
+cifar10/cifar-10-batches-py/readme.html
+cifar10/cifar-10-batches-py/test_batch
+cifar10/cifar-10-batches-py/data_batch_5
+cifar10/cifar-10-batches-py/batches.meta
