@@ -251,7 +251,10 @@ def inference(images):
                               tf.constant_initializer(0.0))
     softmax_linear = tf.add(tf.matmul(local4, weights), biases, name=scope.name)
     _activation_summary(softmax_linear)
-
+  '''
+  my code : normalize logits
+  '''
+  softmax_linear = tf.nn.l2_normalize(softmax_linear, 0, epsilon=1e-12, name=None)
   return softmax_linear
 
 
