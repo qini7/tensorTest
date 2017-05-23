@@ -11,12 +11,12 @@ NUM_CLASSES = 10
 
 
 labels = tf.constant([1, 5, 7])
-
+#labels = tf.reshape(labels, [-1, 1])
 labels = tf.expand_dims(labels, 1)
 labels = tf.Print(labels, [labels])
 
 indices = tf.expand_dims(tf.range(0, batch_size, 1), 1)
-#indices = tf.Print(indices, [indices])
+#indices = tf.Print(indices, [indices])i
 concated = tf.concat(1, [indices, labels])
 concated = tf.Print(concated, [concated])
 '''
